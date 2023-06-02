@@ -7,12 +7,14 @@
 
 # Optional parameters:
 # @raycast.icon 🤖
-# @raycast.argument1 { "type": "text", "placeholder": "Placeholder" }
+# @raycast.argument1 { "type": "text", "placeholder": "" }
+# @raycast.argument2 { "type": "text", "placeholder": "", "optional": true}
 
 import sys
 
-from dispatch import dispatch
+from dispatcher import dispatch
 
 destination = sys.argv[1]
+subdivision = sys.argv[2]
 
-dispatch("init", destination, )
+dispatch("init-osx", destination, subdivision)
