@@ -1,14 +1,14 @@
 from util import open_tab
 
 
-def log(app_name, sub_destination):
+def log(app_name, target_env):
     dev_log_url = "dev.url"
     stg_log_url = "stg.url"
     prd_log_url = "prd.url"
 
     default_url = dev_log_url
 
-    match sub_destination:
+    match target_env:
         case "":
             open_tab(default_url)
         case "dev":

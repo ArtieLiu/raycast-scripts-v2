@@ -1,5 +1,5 @@
-from github import github
-from log import log
+from destinations.github import github
+from destinations.log import log
 
 
 def dispatch(appname, destination, subdivision):
